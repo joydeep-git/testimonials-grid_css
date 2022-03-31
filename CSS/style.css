@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+/* Font size: 13px */
+
+/* font-family: 'Barlow Semi Condensed', sans-serif; */
+
+:root{
+   --clr-Moderate-violet: #7541c8;
+   --clr-Very-dark-grayish-blue: #48556a;
+   --clr-Very-dark-blackish-blue: #19212e;
+   --clr-White: #ffffff;
+   --clr-Light-gray: #cfcfcf;
+   --clr-Light-grayish-blue: #ecf2f8;
+   --clr-attribution-a: #3e52a3;
+}

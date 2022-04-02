@@ -198,6 +198,11 @@ span{
     opacity: 0.5;
 }
 
+@media screen and (min-width: 1280px)
+{
+    .main-div{
+        grid-template-columns: repeat(4, 1fr);
+    }
 
 
 

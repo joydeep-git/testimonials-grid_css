@@ -200,19 +200,8 @@ span{
 
 @media screen and (min-width: 1280px)
 {
-    .main-div{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
 
-    .main-div .daniel{
-        grid-column: 1/3;
-    }
-    .main-div.last{
-        grid-column: 3;
-        grid-row: 1/5;
-    }
-
+    
 
 
 

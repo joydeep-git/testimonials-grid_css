@@ -27,12 +27,12 @@ html{
 }
 
 body{
-    display: flex;
+    display: grid;
     min-height: 100vh;
-    justify-content: center;
-    align-items: center;
+    place-items: center;
     font-family: var(--ff-barlow);
     background-color: var(--clr-Light-gray);
+    padding: 3rem;
 }
 
 img{
@@ -198,14 +198,9 @@ span{
     opacity: 0.5;
 }
 
-@media screen and (min-width: 1280px)
+@media screen and (min-width: 768px);
 {
-
-    body{
-        display: flexbox;
-    }
-
-
+body
 
 
 

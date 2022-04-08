@@ -127,7 +127,7 @@ span{
     line-height: 20px;
 }
 .jeanette{
-    margin: 2rem 0 2rem 0;
+    margin: 1rem 0 2rem 0;
     background-color: var(--clr-White);
     padding: 2rem;
     border-radius: 10px;
@@ -154,7 +154,7 @@ span{
     background-color: var(--clr-Very-dark-blackish-blue);
     padding: 2rem;
     border-radius: 10px;
-    margin: 2rem 0 2rem 0;
+    margin: 1rem 0 2rem 0;
 }
 .patrick-top{
     display: flex;
@@ -175,7 +175,7 @@ span{
 }
 
 .kira{
-    margin: 2rem 0 2rem 0;
+    margin: 1rem 0 2rem 0;
     background-color: var(--clr-White);
     padding: 2rem;
     border-radius: 10px;
@@ -200,8 +200,10 @@ span{
 
 @media screen and (min-width: 768px);
 {
-body
-
-
+    body{
+        display: flex;
+        padding: 2rem;
+        
+    }
 
 }

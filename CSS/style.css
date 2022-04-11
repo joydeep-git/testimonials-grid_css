@@ -65,6 +65,9 @@ span{
     /* position: relative; */
     /* margin: 4rem 2rem 0 2rem; */
 }
+.card-1 span{
+    color: var(--clr-Light-grayish-blue);
+}
 
 .daniel-top{
     display: flex;
@@ -109,7 +112,9 @@ span{
     padding: 2rem;
     border-radius: 10px;
 }
-
+.card-2 span{
+    color: var(--clr-Light-grayish-blue);
+}
 .jonathan-top{
     display: flex;
 }
@@ -131,6 +136,9 @@ span{
     background-color: var(--clr-White);
     padding: 2rem;
     border-radius: 10px;
+}
+.card-3 h3{
+    color: var(--clr-Very-dark-blackish-blue);
 }
 .jeanette-top{
     display: flex;
@@ -180,6 +188,9 @@ span{
     padding: 2rem;
     border-radius: 10px;
 }
+.card-5 h3{
+    color: var(--clr-Very-dark-blackish-blue);
+}
 .kira-top{
     display: flex;
 }
@@ -200,9 +211,15 @@ span{
 
 @media screen and (min-width: 900px);
 {   
+    body{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
 
-    
     .card{
+        padding: 0;
+        margin: 0;
         display: grid;
         height: 100vh;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -212,8 +229,8 @@ span{
     }
 
     .card-1{
-        width: auto;
-        height: auto;
+        padding: 0;
+        margin: 0;
         grid-column: 1/1;
         grid-row: 1/2;
     }

@@ -47,8 +47,8 @@ h3{
     color: var(--clr-Light-gray);
 }
 span{
-    color: var(--clr-Light-gray);
-    opacity: 50%;
+    /* color: var(--clr-Light-gray); */
+    opacity: 70%;
 }
 .name{
     margin-left: 1.5rem;margin-bottom: 1rem;
@@ -82,8 +82,8 @@ span{
     height: 8rem;
     opacity: 0.45;
     color: var(--clr-Light-gray);
-    float: right;
-    align-self:flex-end;
+    display: grid;
+    place-items: right;
 }
 .daniel-middle{
     color: var(--clr-White);
@@ -200,7 +200,7 @@ span{
 
 @media screen and (min-width: 900px);
 {   
-    
+
     .card{
         display: grid;
         height: 100vh;
@@ -211,7 +211,7 @@ span{
     }
 
     .card-1{
-        grid-column: 1/3;
+        grid-column: 1/1;
         grid-row: 1/2;
     }
 

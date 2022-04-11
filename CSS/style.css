@@ -199,7 +199,8 @@ span{
 }
 
 @media screen and (min-width: 900px);
-{
+{   
+    
     .card{
         display: grid;
         height: 100vh;

@@ -209,10 +209,10 @@ span{
     opacity: 0.5;
 }
 
-@media screen and (min-width: 900px);
+@media screen and (min-width: 900px)
+
 {   
     body{
-        display: none;
         padding: 0;
         margin: 0;
     }
@@ -221,20 +221,13 @@ span{
         padding: 0;
         margin: 0;
         display: grid;
+        align-items: center;
+        justify-content: center;
         height: 100vh;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         width: 100%;
         height: 100%;
-        gap: 1rem;
-
-
-
-        display: grid;
-    column-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(var(--tile-max-size), 1fr));
-    grid-auto-flow: dense;
-    row-gap: 24px;
     }
 
     .card-1{

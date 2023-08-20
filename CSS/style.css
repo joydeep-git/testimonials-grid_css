@@ -1,280 +1,189 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
-
-/* - Mobile: 375px
-- Desktop: 1440px */
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html{
-    font-size: 13px;
-}
-
 :root {
-  --clr-Moderate-violet: #7541c8;
-  --clr-Very-dark-grayish-blue: #48556a;
-  --clr-Very-dark-blackish-blue: #19212e;
-  --clr-White: #ffffff;
-  --clr-Light-gray: #cfcfcf;
-  --clr-Light-grayish-blue: #ecf2f8;
-  --clr-attribution-a: #3e52a3;
-
-  --ff-barlow: "Barlow Semi Condensed", sans-serif;
+    --bg-color: #ECF2F8;
+    --white-color: #fff;
+    --primary-color: #733FC8;
+    --primary-accent-color: #A775F1;
+    --secondary-color: #48556A;
+    --tertiary-color: #19202D;
+    --lightest-gray-color: #CFCFCF;
 }
 
-.card{
-    /* display: grid;
-    min-height: 100vh; */
-    place-items: center;
-    font-family: var(--ff-barlow);
-    background-color: var(--clr-Light-gray);
-    padding: 3rem;
-}
-
-img{
-    clip-path: circle();
-    height: 2.7rem;
-    width: auto;
-    border: 2px solid var(--clr-Light-gray);
-    border-radius: 50%;
-}
-
-h3{
-    color: var(--clr-Light-gray);
-}
-span{
-    /* color: var(--clr-Light-gray); */
-    opacity: 70%;
-}
-.name{
-    margin-left: 1.5rem;margin-bottom: 1rem;
-}
-
-.main-div{
-    padding: 3rem;
-}
-
-.card-1{
-    background-color: var(--clr-Moderate-violet);
-    padding: 2rem;
-    border-radius: 10px;
-    /* position: relative; */
-    /* margin: 4rem 2rem 0 2rem; */
-}
-.card-1 span{
-    color: var(--clr-Light-grayish-blue);
-}
-
-.daniel-top{
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
-    margin: 0 auto 1rem 0;
-}
-
-.quote-svg{
-    border: none;
-    border-radius: 0;
-    clip-path: none;
-    position: absolute;
-
-    height: 8rem;
-    opacity: 0.45;
-    color: var(--clr-Light-gray);
-    display: grid;
-    place-items: right;
-}
-.daniel-middle{
-    color: var(--clr-White);
-    font-family: var(--ff-barlow);
-    font-size: 1.65rem;
-    margin-top: 0;
-    padding-top: 0px;
-    padding-bottom: 1rem;
-}
-.daniel-bottom{
-    margin-top: 1rem;
-    opacity: 0.5;
-    color: var(--clr-Light-grayish-blue);
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 1rem;
-    line-height: 20px;
+    color: var(--white-color);
+    background-color: var(--bg-color);
+    margin: 4em auto;
 }
 
-.card-2{
-    margin: 2rem 0 2rem 0;
-    background-color: var(--clr-Very-dark-grayish-blue);
-    padding: 2rem;
-    border-radius: 10px;
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
-.card-2 span{
-    color: var(--clr-Light-grayish-blue);
-}
-.jonathan-top{
+
+.container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-.jonathan-middle{
-    color: var(--clr-White);
-    font-family: var(--ff-barlow);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-.jonathan-bottom{
-    color: var(--clr-Light-gray);
-    opacity: 0.5;
-    font-size: 1rem;
-    line-height: 20px;
-}
-.card-3{
-    margin: 1rem 0 2rem 0;
-    background-color: var(--clr-White);
-    padding: 2rem;
+/* individual card styling */
+.card {
+    grid-area: card;
+    box-sizing: border-box;
+    background: #733FC8;
     border-radius: 10px;
-}
-.card-3 h3{
-    color: var(--clr-Very-dark-blackish-blue);
-}
-.jeanette-top{
-    display: flex;
-}
-.jeanette h3, span{
-    color: var(--clr-Very-dark-grayish-blue);
-}
-.jeanette-middle{
-    color: var(--clr-Very-dark-grayish-blue);
-    font-family: var(--ff-barlow);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-.jeanette-bottom{
-    color: var(--clr-Very-dark-grayish-blue);
-    font-size: 1.2rem;
-    opacity: 0.5;
+    padding: 2em 1.75em;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 45px auto;
+    grid-template-rows: 16px 16px auto minmax(auto, 1fr);
+    grid-template-areas:
+        "img name"
+        "img title"
+        "main-quote main-quote"
+        "testimonial testimonial";
 }
 
-.card-4{
-    background-color: var(--clr-Very-dark-blackish-blue);
-    padding: 2rem;
-    border-radius: 10px;
-    margin: 1rem 0 2rem 0;
-}
-.patrick-top{
-    display: flex;
-}
-.patrick-top span{
-    color: var(--clr-Light-gray);
-}
-.patrick-middle{
-    color: var(--clr-White);
-    font-family: var(--ff-barlow);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-.patrick-bottom{
-    color: var(--clr-White);
-    font-size: 1.2rem;
-    opacity: 0.5;
+.card__name {
+    grid-area: name;
+    font-size: .8125rem;
+    font-weight: 500;
 }
 
-.card-5{
-    margin: 1rem 0 2rem 0;
-    background-color: var(--clr-White);
-    padding: 2rem;
-    border-radius: 10px;
-}
-.card-5 h3{
-    color: var(--clr-Very-dark-blackish-blue);
-}
-.kira-top{
-    display: flex;
-}
-.kira h3, span{
-    color: var(--clr-Very-dark-grayish-blue);
-}
-.kira-middle{
-    color: var(--clr-Very-dark-grayish-blue);
-    font-family: var(--ff-barlow);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-.kira-bottom{
-    color: var(--clr-Very-dark-grayish-blue);
-    font-size: 1.2rem;
-    opacity: 0.5;
+.card__title {
+    grid-area: title;
+    font-size: .6875rem;
+    opacity: 50%;
+    margin-top: 2px;
 }
 
-
-@media screen and (min-width: 640px)
-{
-    .card{
-        grid-template-columns: repeat(2, 1fr);
-    }
+.card__main-quote {
+    grid-area: main-quote;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1em 0;
 }
-@media screen and (min-width: 900px)
 
-{   
-    .card{
-        padding: 2rem;
+.card__testimonial {
+    font-size: .8125rem;
+    grid-area: testimonial;
+    color: var(--testimonial-color);
+    opacity: 70%;
+    line-height: 1.6;
+}
 
+.card__img {
+    grid-area: img;
+    height: 28px;
+    width: auto;
+    border-radius: 100%;
+    margin-top: 2px;
+}
 
+.accent-border {
+    border: 2px solid var(--primary-accent-color);
+}
+
+/* card variations stying */
+.card1 {
+    grid-area: card1;
+    background: var(--primary-color);
+    color: var(--white-color);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 85% 0%;
+}
+
+.card2 {
+    grid-area: card2;
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.card4 {
+    grid-area: card4;
+    background: var(--tertiary-color);
+    color: var(--white-color);
+}
+
+.card5 {
+    grid-area: card5;
+}
+
+.card3,
+.card5 {
+    background: var(--white-color);
+    color: var(--secondary-color);
+}
+
+/*  tablet sized media query */
+@media (min-width: 600px) {
+
+    /* multiple cards layout */
+    .container {
         display: grid;
-
-        height: 100vh;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        width: 100%;
-        height: 100vh;
-        gap: 1rem;
-        align-items: center;
-        justify-content: center;
+        grid-template-columns: minmax(250px, auto) minmax(250px, auto);
+        grid-template-areas:
+            "card1 card4"
+            "card2 card3"
+            "card5 card5";
+        gap: 2em;
+        padding: 2em;
+        align-items: unset;
     }
 
-    .card-1{
-        grid-column: 1/3;
-        grid-row: 1/1;
+    .card {
+        margin: 0;
     }
-    .card-2{
-        grid-column: 3/3;
-        grid-row: 1/1;
-        padding: 2rem;
-        width: 85%;
-    }
-    .card-2 .name h3{
-        font-size: 1.5rem;
-    }
-    .card-2 .jonathan-middle{
-        font-size: 1.5rem;
-    }
-    .card-2 .jonathan-bottom{
-        font-size: 1.4rem;
+}
+
+/* desktop sized media query */
+@media (min-width: 1100px) {
+
+    /* multiple cards layout */
+    .container {
+        grid-template-columns: repeat(4, minmax(200px, auto));
+        grid-template-areas:
+            "card1 card1 card2 card5"
+            "card3 card4 card4 card5";
     }
 
-
-    .card-3{
-        grid-column: 1/1;
-    }
-    .card-4{
-        grid-column: 2/4;
-    }
-    .card-5{
-        grid-column: 4/4;
-        grid-row: 1/3;
-        padding: 2rem 3rem;
-    }
-    .card-5 h3{
-        font-size: 1.5rem;
-    }
-    .card-5 .kira-middle{
-        font-size: 1.5rem;
-    }
-    .card-5 .kira-bottom{
-        font-size: 1.3rem;
+    .card {
+        margin: 0;
+        padding: 2em;
     }
 
+    .card1 {
+        background-position: 80% 0%;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--tertiary-color);
+    width: 400px;
+    margin: 2em auto;
+}
+
+.attribution a {
+    color: var(--primary-accent-color);
+    text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+    background: var(--primary-accent-color);
+    color: var(--white-color);
+    padding: 1px 3px;
 }
